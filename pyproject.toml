@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "symrock"
+version = "0.1.0"
+description = "SymPy-based lab for 1D vertical rocket mechanics: symbolic equations of motion, numeric integration, and simple plots."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+  { name = "Svetlana Romanova" }
+]
+
+dependencies = [
+  "sympy",
+  "numpy",
+  "matplotlib",
+]
+
+keywords = [
+  "sympy",
+  "rocket",
+  "rocket-mechanics",
+  "flight-dynamics",
+  "tsiolkovsky",
+  "symbolic-math",
+  "scientific-computing",
+  "aerospace",
+]
+
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Intended Audience :: Education",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering :: Physics",
+  "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.urls]
+Homepage = "https://github.com/SvetLuna-Lab/symbolic-rocket-mechanics-lab"
+Source = "https://github.com/SvetLuna-Lab/symbolic-rocket-mechanics-lab"
+
+[tool.setuptools]
+packages = ["symrock"]
+package-dir = { "" = "src" }
+
+[tool.setuptools.package-data]
+symrock = []
